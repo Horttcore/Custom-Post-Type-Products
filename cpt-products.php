@@ -3,7 +3,7 @@
 Plugin Name: Custom Post Type Products
 Plugin URI: http://horttcore.de.de
 Description: Custom Post Type Products
-Version: 0.1
+Version: 0.2
 Author: Ralf Hortt
 Author URI: http://horttcorte.de
 License: GPL2
