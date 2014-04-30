@@ -100,7 +100,7 @@ class Custom_Post_Type_Products
 			'show_ui' => TRUE,
 			'show_in_menu' => TRUE,
 			'query_var' => TRUE,
-			'rewrite' => array( 'slug' => _x( 'product', 'Post Type Slug', 'cpt-products' ) ),
+			'rewrite' => array( 'slug' => _x( 'products', 'Post Type Slug', 'cpt-products' ) ),
 			'capability_type' => 'post',
 			'has_archive' => TRUE,
 			'hierarchical' => TRUE,
