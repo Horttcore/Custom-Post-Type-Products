@@ -24,13 +24,19 @@ A custom post type for managing products
 
 ### Actions
 
-* None
+* `custom-post-type-products-widget-output` - Widget output
+* `custom-post-type-products-widget-loop-output` - Widget output in loop
 
 ### Filters
 
-* None
+* `custom-post-type-products-widget-query` - Widget arguments
 
 ## Changelog
+
+### v0.5
+
+* Added: Products widget
+* Added: Actions and filters
 
 ### v0.4
 
