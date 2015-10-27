@@ -39,7 +39,7 @@ final class Custom_Post_Type_Products_Admin
 	{
 
 		$post             = get_post();
-		$post_type        = get_post_type( $post );
+		$post_type        = 'product';
 		$post_type_object = get_post_type_object( $post_type );
 
 		$messages['product'] = array(

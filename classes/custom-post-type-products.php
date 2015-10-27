@@ -77,7 +77,10 @@ final class Custom_Post_Type_Products
 			'show_ui' => TRUE,
 			'show_in_menu' => TRUE,
 			'query_var' => TRUE,
-			'rewrite' => array( 'slug' => _x( 'products', 'Post Type Slug', 'custom-post-type-products' ) ),
+			'rewrite' => array(
+				'slug' => _x( 'products', 'Post Type Slug', 'custom-post-type-products' ),
+				'with_front' => FALSE,
+			),
 			'capability_type' => 'post',
 			'has_archive' => TRUE,
 			'hierarchical' => FALSE,
