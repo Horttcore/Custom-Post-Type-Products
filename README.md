@@ -6,6 +6,9 @@ A custom post type for managing products
 
 * Title
 * Editor
+* Post thumbnail
+* Page Attributes
+* Excerpt
 * Custom taxonomy `product-category`
 
 ## Custom Fields
@@ -21,14 +24,11 @@ A custom post type for managing products
 
 ### Actions
 
-* `job-meta-table-before` - Before the post meta table
-* `job-meta-table-before` - First row in the post meta table
-* `job-meta-table-before` - Last row in the post meta table
-* `job-meta-table-before` - After the post meta table
+* None
 
 ### Filters
 
-* `save-job-meta` - Filter the meta data
+* None
 
 ## Changelog
 
