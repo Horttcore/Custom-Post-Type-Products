@@ -20,7 +20,7 @@ final class Custom_Post_Type_Products_Admin
 	public function __construct()
 	{
 
-		add_filter( 'post_updated_messages', array( $this, 'post_updated_messages' ) );
+		add_filter( 'post_updated_messages', [$this, 'post_updated_messages'] );
 
 	} // END __construct
 
@@ -42,7 +42,7 @@ final class Custom_Post_Type_Products_Admin
 		$post_type        = 'product';
 		$post_type_object = get_post_type_object( $post_type );
 
-		$messages['product'] = array(
+		$messages['product'] = [
 			0  => '', // Unused. Messages start at index 1.
 			1  => __( 'Product updated.', 'custom-post-type-products' ),
 			2  => __( 'Custom field updated.' ),
@@ -54,7 +54,7 @@ final class Custom_Post_Type_Products_Admin
 			8  => __( 'Product submitted.', 'custom-post-type-products' ),
 			9  => sprintf( __( 'Product scheduled for: <strong>%1$s</strong>.', 'custom-post-type-products' ), date_i18n( __( 'M j, Y @ G:i', 'custom-post-type-products' ), strtotime( $post->post_date ) ) ),
 			10 => __( 'Product draft updated.', 'custom-post-type-products' )
-		);
+		];
 
 		if ( $post_type_object->publicly_queryable ) :
 

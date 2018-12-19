@@ -19,11 +19,11 @@ class Custom_Post_Type_Products_Widget extends WP_Widget {
 	public function __construct()
 	{
 
-		$widget_ops = array(
+		$widget_ops = [
 			'classname' => 'widget-products',
 			'description' => __( 'Displays a product loop', 'custom-post-type-products' ),
-		);
-		$control_ops = array( 'id_base' => 'widget-products' );
+		];
+		$control_ops = ['id_base' => 'widget-products'];
 		parent::__construct( 'widget-products', __( 'Products', 'custom-post-type-products' ), $widget_ops, $control_ops );
 
 	} // END __construct
@@ -74,7 +74,7 @@ class Custom_Post_Type_Products_Widget extends WP_Widget {
 		</p>
 
 		<?php
-		$category_dropdown = wp_dropdown_categories(array(
+		$category_dropdown = wp_dropdown_categories([
 			'show_option_all' => __( 'All', 'custom-post-type-products' ),
 			'taxonomy' => 'product-category',
 			'name' => $this->get_field_name( 'product-category' ),
@@ -83,7 +83,7 @@ class Custom_Post_Type_Products_Widget extends WP_Widget {
 			'hide_empty' => FALSE,
 			'hierarchical' => TRUE,
 			'echo' => FALSE
-		));
+		]);
 
 		if ( $category_dropdown ) :
 
@@ -133,28 +133,28 @@ class Custom_Post_Type_Products_Widget extends WP_Widget {
 	 *
 	 * @access public
 	 * @param array $args Arguments
-	 * @param array $instance Widget instance
+	 * @param array $instance Widgespot instance
 	 * @since 0.5.0
 	 * @author Ralf Hortt <me@horttcore.de>
 	 */
 	public function widget( $args, $instance )
 	{
 
-		$query = array(
+		$query = [
 			'post_type' => 'product',
 			'showposts' => $instance['limit'],
 			'orderby' => $instance['orderby'],
 			'order' => $instance['order'],
-		);
+		];
 
 		if ( 0 != $instance['product-category'] ) :
-			$query['tax_query'] = array(
-				array(
+			$query['tax_query'] = [
+				[
 					'taxonomy' => 'product-category',
 					'field' => 'term_id',
 					'terms' => $instance['product-category'],
-				)
-			);
+				]
+			];
 		endif;
 
 		$query = apply_filters( 'custom-post-type-products-widget-query', $query, $args, $instance );
