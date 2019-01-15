@@ -1,0 +1,37 @@
+{
+    "name": "horttcore/custom-post-type-products",
+    "description": "A WordPress custom post type for managing products",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ralf Hortt",
+            "email": "me@horttcore.de"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/horttcore/wp-custom-post-type"
+        },
+        {
+            "type": "path",
+            "url": "packages/horttcore/wp-custom-taxonomy"
+        },
+        {
+            "type": "path",
+            "url": "packages/horttcore/wp-plugin"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Horttcore\\CustomPostTypeProducts\\": "src/"
+        }
+    },
+    "require": {
+        "horttcore/wp-custom-post-type": "^1.0.0",
+        "horttcore/wp-custom-taxonomy": "^1.0.0",
+        "horttcore/wp-plugin": "^1.0.0"
+    }
+}

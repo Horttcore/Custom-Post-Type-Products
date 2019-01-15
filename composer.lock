@@ -1,0 +1,96 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a9dd6ef79cb2a026be3a28b57b0402fb",
+    "packages": [
+        {
+            "name": "horttcore/wp-custom-post-type",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/horttcore/wp-custom-post-type",
+                "reference": "a05ea771b7fb23fa4bb6540939bb576b1ff843d1",
+                "shasum": null
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Horttcore\\CustomPostType\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralf Hortt",
+                    "email": "me@horttcore.de"
+                }
+            ],
+            "description": "A custom post type helper"
+        },
+        {
+            "name": "horttcore/wp-custom-taxonomy",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/horttcore/wp-custom-taxonomy",
+                "reference": "6fe8d6efd16029c89e35c5ba40591808947cb035",
+                "shasum": null
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Horttcore\\CustomTaxonomy\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralf Hortt",
+                    "email": "me@horttcore.de"
+                }
+            ],
+            "description": "A WordPress custom taxonomy helper"
+        },
+        {
+            "name": "horttcore/wp-plugin",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/horttcore/wp-plugin",
+                "reference": "bc4cf80fbeb384869df2cffed79386c675bdcb89",
+                "shasum": null
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Horttcore\\Plugin\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralf Hortt",
+                    "email": "me@horttcore.de"
+                }
+            ],
+            "description": "A WordPress plugin helper"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
